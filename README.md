@@ -27,6 +27,14 @@ O desafio consiste em criar uma interface interativa para pesquisa e exibiçao d
 - A qualidade do código, utilização dos hooks de maneira correta, design patern do projeto, boas práticas de código, UI e UX e o trabalho em equipe serão os fatores que mais contarão para avaliação de cada candidato;
 - O projeto será realizado em duplas ou trios, se necessário, pois queremos avaliar como vocês se saem trabalhado em equipe, porém o processo de avaliação será feito de maneira individual;
 
+### Check list de prioridades:
+- Consumo e renderização dos dados;
+- CSS do layout e dos cards;
+- Search Input;
+- Filtro por tipo de pokemon;
+- Paginação com infinity scroll ou botão load more;
+- Cores nos card com base no primeiro tipo;
+
 
 ## Documentação completa da API:
 
