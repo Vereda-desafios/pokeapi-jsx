@@ -36,6 +36,16 @@ O desafio consiste em criar uma interface interativa para pesquisa e exibiçao d
 - Cores nos card com base no primeiro tipo;
 
 
+## Passo a passo conexão com git:
+- Aceitar invite para a organização pelo navegador via email;
+- Navegar para a branch do seu grupo e clonar o repositório pelo terminal;
+- Após clonar o repositório, rodar o comando git config --local user.name "seu_nome_no_github depois, git config --local user.email "seu@emaildogit.com" para se conectar localmente ao seu github;
+- Criar rodar o comando git branch "grupX_seuNome" para criar uma branch individual e depois o comando git checkout "grupoX_seuNome" para trabalhar na branch criada;
+- Fazer merge da sua branch individual para a branch main do grupo com os códigos de cada membro para o projeto principal;
+
+
+
+
 ## Documentação completa da API:
 
 [PokéApi](https://pokeapi.co/)
