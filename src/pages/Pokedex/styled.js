@@ -8,6 +8,16 @@ export const PokemonContainer = styled.div`
 
     span{
         display: flex;
+        align-items: center;
         justify-content: space-between;
+
+        margin-left: 10px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
     }
 `

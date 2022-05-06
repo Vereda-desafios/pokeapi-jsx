@@ -29,6 +29,7 @@ export default function Pokedex() {
                             <div key={type.type.name}>{type.type.name}</div>
                         ))}
                     </span>
+                    <img src={pokemon.data.sprites.front_default} alt="pokemon-img" />
                 </PokemonContainer>
             ))}
         </>
