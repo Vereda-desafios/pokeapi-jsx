@@ -25,11 +25,16 @@ export const PokemonContainer = styled.div`
         flex-direction: column;
 
         font-weight: 700;
+        color: #514444;
     }
     
     .pokemon-name {
         margin-bottom: 5px;
         padding: 10px;
+    }
+
+    .pokemon-id {
+        color: #c4c4c4;
     }
 
     span {
