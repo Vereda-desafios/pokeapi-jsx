@@ -20,18 +20,22 @@ export default function Pokedex() {
     }, [])
 
     return (
-        <>
+        <PokemonContainer>
             {pokemons.map((pokemon) => (
-                <PokemonContainer key={pokemon.data.name}>
-                    <div className="Pokemon-Name">{pokemon.data.name}</div>
-                    <span>
-                        {pokemon.data.types.map((type) => (
-                            <div key={type.type.name}>{type.type.name}</div>
-                        ))}
-                    </span>
-                    <img src={pokemon.data.sprites.front_default} alt="pokemon-img" />
-                </PokemonContainer>
+                <div key={pokemon.data.name} className="pokemon-card-container">
+                    <div className="pokemon-strings">
+                        <span className="pokemon-name">{pokemon.data.name}</span>
+                        <div>
+                            {pokemon.data.types.map((type) => (
+                                <span key={type.type.name}>{type.type.name}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <img src={pokemon.data.sprites.front_default} alt="pokemon-img" />
+                    </div>
+                </div>
             ))}
-        </>
+        </PokemonContainer>
     )
 }
