@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getPokemon, getPokemonURL } from "../../api";
 
+import { PokemonContainer } from "./styled";
+
 export default function Pokedex() {
     const [pokemons, setPokemons] = useState([])
     
@@ -20,14 +22,14 @@ export default function Pokedex() {
     return (
         <>
             {pokemons.map((pokemon) => (
-                <div key={pokemon.data.name}>
+                <PokemonContainer key={pokemon.data.name}>
                     <div className="Pokemon-Name">{pokemon.data.name}</div>
                     <span>
                         {pokemon.data.types.map((type) => (
                             <div key={type.type.name}>{type.type.name}</div>
                         ))}
                     </span>
-                </div>
+                </PokemonContainer>
             ))}
         </>
     )
