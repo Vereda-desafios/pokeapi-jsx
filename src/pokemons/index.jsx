@@ -2,7 +2,7 @@ import axios from "axios"
 import React, { useState, useEffect } from "react"
 import { api } from "../services/api"
 import { PokemonMain, PokeCard } from "./styles"
-import { Card } from "../Card2/index"
+import { Card } from "../components/Card"
 
 export function PokemonContainer() {
     const [pokemons, setPokemons] = useState([])
@@ -21,9 +21,9 @@ export function PokemonContainer() {
     return (
         <PokemonMain>
             <PokeCard>
-                {pokemons.map((pokemon, index) => {
+                {pokemons.map((pokemon) => {
                     return <>
-                        <Card props={pokemon} />
+                        <Card url={pokemon.url} name={pokemon.name}/>
                     </>
                 })}
             </PokeCard>

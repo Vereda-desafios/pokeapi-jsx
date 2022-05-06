@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const PokemonMain = styled.div`
-padding: 10%;
+padding: 0 10%;
 `
 const PokeCard = styled.div`
 display: grid;
